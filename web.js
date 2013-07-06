@@ -1,7 +1,7 @@
 var express = require('express'),
   app = express.createServer( express.logger() ),
   fs = require('fs'),
-  buf = fs.readFileSync('index.html');
+  buf = fs.readFileSync('bitstarter.html');
 
 app.get('/', function(request, response) {
   response.send( buf.toString() );
